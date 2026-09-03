@@ -1,0 +1,39 @@
+{
+  "name": "genpark-realtime-storefront-hero-personalization-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time e-commerce storefront hero banner and dynamic copy personalization engine driven by incoming shopper context.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "merchant-commerce",
+  "tags": [
+    "dynamic-yield",
+    "bloomreach",
+    "hero-personalization",
+    "conversion-rate",
+    "storefront-ai"
+  ],
+  "inputs": {
+    "user_intent_tag": {
+      "type": "string"
+    },
+    "referral_channel": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "personalization_id": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "predicted_ctr_lift_pct": {
+      "type": "number"
+    },
+    "experiment_payload_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
